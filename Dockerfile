@@ -13,7 +13,7 @@ COPY . /opt/
 RUN pip install -r requirements.txt
 
 # Expose application PORT
-EXPOSE 8080
+EXPOSE 80
 
 # Run application
-CMD ["python","manage.py","runserver","0.0.0.0:8080"]
+CMD ["python","manage.py","runserver","0.0.0.0:80"]
